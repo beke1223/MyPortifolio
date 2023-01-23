@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Explora&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -17,63 +19,159 @@ body {
   color: #fff !important;
 }
 .horLine {
+  position: relative;
   height: 0.25rem;
   border: 0.2rem solid #fff;
-  margin-top: 12rem;
+  top: 20rem;
   animation: anim-line infinite ease-in-out 3s;
 }
 .round-circle {
-  height: 20rem;
-  border-radius: 50%;
-  position: relative;
-  top: -10rem;
-  align-items: center;
-  justify-content: center;
+  z-index: 1;
 }
-.round-circle:hover {
-  animation: anim-img infinite ease-in-out 4s;
-  animation-delay: 10ms;
+.pImage {
+  position: relative;
+  left: 50%;
+  width: 25%;
+  top: -4rem;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 0%;
+  transform-origin: center 2%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+  transform: skew(40deg);
 }
 .left-of-img {
-  position: absolute;
-  top: 11rem;
-  left: 15%;
-  text-align: start;
-}
-.skills {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  top: 2rem;
+  top: -23rem;
+  left: 2%;
+  text-align: start;
+  width: 50%;
 }
-.skills > .btn {
-  width: 15rem;
-  height: 4rem;
+.info-group {
+  font-family: "Explora", cursive;
+  word-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
-.skillsPair {
-  display: inline;
+.name {
+  font-size: 3rem;
+  font-weight: bold;
 }
+.email {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.phone {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.viewDow {
+  position: relative;
+  top: -13rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(101, 109, 151, 0.52),
+      rgba(117, 107, 19, 0.73)
+    ),
+    url("img/cv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22rem;
+}
+.btnRow {
+  position: relative;
+  top: 85%;
+  margin-left: 30%;
+}
+.LanName {
+  font-size: 2rem;
+}
+.certificates {
+  width: 80%;
+  position: relative;
+  margin-left: 10%;
+}
+.certCarousel {
+  position: relative;
+  width: 60%;
+  margin-left: 15%;
+  color: black;
+  margin-top: 40%;
+}
+.card-cert {
+  position: relative;
+  margin: 15%;
+  width: 60%;
+}
+
+.feedback {
+  margin-top: 6%;
+  position: relative;
+  left: 40%;
+}
+
+.btn-feedback {
+  position: relative;
+  width: 30%;
+  height: 5%;
+  left: -4%;
+  background-color: #c5c211;
+}
+
 .skillsComp {
   position: relative;
+  width: 100%;
+  margin: 0% 5% 5% 5%;
 }
+.footer-social {
+  position: relative;
+  /* margin: 4% 5% 0 40%; */
+  height: 30vh;
+}
+.footer-card {
+  width: 100%;
+  color: black;
+  background-color: rgb(34, 32, 31);
+}
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-icon :hover {
+  transform: scale(1.3);
+  background-color: rgb(142, 167, 0);
+}
+
+.social-icon a img {
+  width: 40%;
+  z-index: 1;
+}
+
 .App {
+  background: linear-gradient(
+    rgb(1rgb (121, 88, 88) 130, 130),
+    rgb(90, 122, 47),
+    rgb(23, 111, 138),
+    rgb(103, 74, 170),
+    url("img/envelope-regular.svg")
+  ) !important;
+}
+.feedback > .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 @keyframes anim-line {
@@ -94,19 +192,5 @@ body {
   }
   100% {
     border-color: #5708a0;
-  }
-}
-@keyframes anim-img {
-  25% {
-    border-top-left-radius: 75%;
-  }
-  50% {
-    border-top-right-radius: 75%;
-  }
-  75% {
-    border-bottom-right-radius: 75%;
-  }
-  100% {
-    border-bottom-left-radius: 75%;
   }
 }

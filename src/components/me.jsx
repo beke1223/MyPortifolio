@@ -13,14 +13,17 @@ function Me() {
   return (
     <div>
       <hr className="horLine" />
-      <Image src={tinchel} alt="aa" className="round-circle" />
+      <figute className="swing">
+        <Image src={tinchel} alt="aa" className="round-circle pImage" />
+      </figute>
+
       <div className="left-of-img">
         {info.map((elem) => {
           return (
-            <div>
-              <h3>Name : {elem.name}</h3>
-              <h3>Email : {elem.Email}</h3>
-              <h3>Phone : {elem.Phone}</h3>
+            <div className="info-group">
+              <h3 className="name">Name : {elem.name}</h3>
+              <h3 className="email">Email : {elem.Email}</h3>
+              <h3 className="phone">Phone : {elem.Phone}</h3>
             </div>
           );
         })}

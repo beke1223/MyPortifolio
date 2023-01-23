@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
 import tinchel from "../img/tinchel.png";
-import gmail from "../img/envelope-regular.svg";
-import fb from "../img/facebook-f.svg";
-import github from "../img/square-github.svg";
+
 import "../App.css";
 
 function Navigation() {
@@ -48,23 +46,6 @@ function Navigation() {
     },
   ];
 
-  const socialMedia = [
-    {
-      urls: "#gmail",
-      img: gmail,
-      alt: "social-media-icon-gmail",
-    },
-    {
-      urls: "#github",
-      img: github,
-      alt: "social-media-icon-github",
-    },
-    {
-      urls: "#facebook",
-      img: fb,
-      alt: "social-media-icon-facebook",
-    },
-  ];
   return (
     <Navbar bg="light" expand="lg" className={scrolled ? "scrolled " : ""}>
       <Container className="navBarInner">
@@ -82,7 +63,7 @@ function Navigation() {
                   <div
                     className={
                       activeLink === item.name
-                        ? "active navbar-link"
+                        ? "active active-nav navbar-link"
                         : "navbar-link"
                     }
                     onClick={() => onUpdateActiveLink(item.name)}
@@ -93,18 +74,6 @@ function Navigation() {
               );
             })}
           </Nav>
-
-          <span className="navbar-text">
-            <div className="social-icon">
-              {socialMedia.map((media) => {
-                return (
-                  <a href={media.urls}>
-                    <img src={media.img} alt={media.alt}></img>
-                  </a>
-                );
-              })}
-            </div>
-          </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>

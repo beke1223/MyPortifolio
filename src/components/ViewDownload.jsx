@@ -1,29 +1,33 @@
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
+import { FaDownload } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 
 function ViewDownLoad() {
   return (
-    <div className="skills">
-      <Row style={{ width: "100%" }}>
-        <Col>
-          <Card style={{ width: "100%" }}>
-            <Card.Body>
-              <Button className="btn" size="lg" style={{ width: "100%" }}>
-                View
-              </Button>
-            </Card.Body>
-          </Card>
+    <div className="viewDow">
+      <Row className="btnRow">
+        <Col md={6}>
+          <Button
+            className="btn"
+            size="lg"
+            style={{ width: "80%", marginLeft: "20%", color: "white" }}
+            variant="outline-success"
+          >
+            View &nbsp; <FaEye />
+          </Button>
         </Col>
-        <Col>
-          <Card>
-            <Card.Body>
-              <Button className="btn" size="lg" style={{ width: "100%" }}>
-                Download
-              </Button>
-            </Card.Body>
-          </Card>
+        <Col md={6}>
+          <Button
+            className="btn my-1"
+            size="lg"
+            style={{ width: "80%", color: "white" }}
+            variant="outline-success"
+          >
+            Download&nbsp;
+            <FaDownload />
+          </Button>
         </Col>
       </Row>
     </div>
