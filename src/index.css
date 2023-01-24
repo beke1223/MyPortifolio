@@ -29,17 +29,17 @@
 .indLang:nth-child(1) {
   /*c++*/
   top: 15%;
-  left: 40%;
-  width: 9%;
-  height: 9%;
+  left: 45%;
+  width: 12%;
+  height: 12%;
   background-color: green;
 }
 .indLang:nth-child(2) {
   /*Java*/
-  top: 18%;
-  left: 18%;
-  width: 14%;
-  height: 14%;
+  top: 15%;
+  left: 7%;
+  width: 19%;
+  height: 19%;
   background-color: green;
 }
 .indLang:nth-child(3) {
@@ -52,10 +52,10 @@
 }
 .indLang:nth-child(4) {
   /*JavaScript*/
-  top: 33%;
-  left: 22%;
-  height: 14%;
-  width: 14%;
+  top: 30%;
+  left: 20%;
+  height: 20%;
+  width: 20%;
   background-color: green;
 }
 .indLang:nth-child(5) {
@@ -67,36 +67,36 @@
 }
 .indLang:nth-child(6) {
   /*Css*/
-  height: 9%;
-  width: 9%;
-  left: 30%;
+  height: 19%;
+  width: 19%;
+  left: 13%;
 
   background-color: green;
 }
 .indLang:nth-child(7) {
   /*bootstrap*/
-  top: 30%;
+  top: 33%;
   width: 15%;
-  height: 12%;
-  left: 40%;
+  height: 15%;
+  left: 44%;
 
   background-color: green;
 }
 .indLang:nth-child(8) {
   /*React Js*/
-  top: 5%;
-  width: 14%;
-  height: 14%;
-  left: 25%;
+  top: 11%;
+  width: 16%;
+  height: 16%;
+  left: 28%;
 
   background-color: green;
 }
 .indLang:nth-child(9) {
   /*Flutter*/
-  width: 7%;
-  height: 7%;
+  width: 17%;
+  height: 17%;
   top: 20%;
-  left: 54%;
+  left: 60%;
 
   background-color: green;
 }

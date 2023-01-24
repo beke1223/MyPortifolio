@@ -83,12 +83,7 @@ function certificates() {
               <Card.Header>{elements.site}</Card.Header>
               <Card.Body>
                 <Card.Title>{elements.language}</Card.Title>
-                <Image
-                  src={elements.img}
-                  style={{
-                    width: "100%",
-                  }}
-                />
+                <Image src={elements.img} width="100%" height={"100%"} />
               </Card.Body>
               <Card.Footer>
                 <Button to={elements.url} style={{ marginLeft: "10%" }}>
