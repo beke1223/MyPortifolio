@@ -12,93 +12,47 @@
 }
 
 .langs {
-  align-items: center;
-  text-align: center;
-  vertical-align: middle;
-  justify-content: center;
-  width: 100%;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* justify-content: center; */
+  /* width: 100%; */
+  position: relative;
   display: flex;
+  /* left: 30%; */
+  /* right: 30%; */
 }
 .langs div {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
+  /* position: absolute; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* position: absolute; */
+  /* position: relative; */
 }
-.indLang:nth-child(1) {
-  /*c++*/
-  top: 15%;
-  left: 45%;
-  width: 12%;
-  height: 12%;
-  background-color: green;
+.indLang {
+  /* position: absolute; */
+  /* position: relative; */
 }
-.indLang:nth-child(2) {
-  /*Java*/
-  top: 15%;
-  left: 7%;
-  width: 19%;
-  height: 19%;
-  background-color: green;
-}
-.indLang:nth-child(3) {
-  /*Python*/
-  top: 0%;
-  height: 13%;
-  width: 13%;
-  left: 40%;
-  background-color: green;
-}
-.indLang:nth-child(4) {
-  /*JavaScript*/
-  top: 30%;
-  left: 20%;
-  height: 20%;
-  width: 20%;
-  background-color: green;
-}
-.indLang:nth-child(5) {
-  /*Html*/
-  height: 13%;
-  width: 13%;
-  left: 52%;
-  background-color: green;
-}
-.indLang:nth-child(6) {
-  /*Css*/
-  height: 19%;
-  width: 19%;
-  left: 13%;
 
-  background-color: green;
+.indLang:nth-child(even) {
+  /* position: absolute; */
+  background-color: rgb(38, 167, 38);
+  /* width: fit-content; */
+  /* top: 1rem; */
+  /* left: 14rem; */
+  margin-left: 3rem;
+  /* top: -1rem; */
+  /* top: 0%; */
 }
-.indLang:nth-child(7) {
-  /*bootstrap*/
-  top: 33%;
-  width: 15%;
-  height: 15%;
-  left: 44%;
-
-  background-color: green;
-}
-.indLang:nth-child(8) {
-  /*React Js*/
-  top: 11%;
-  width: 16%;
-  height: 16%;
-  left: 28%;
-
-  background-color: green;
-}
-.indLang:nth-child(9) {
-  /*Flutter*/
-  width: 17%;
-  height: 17%;
-  top: 20%;
-  left: 60%;
-
-  background-color: green;
+.indLang:nth-child(odd) {
+  /* position: absolute; */
+  /* top: 0%; */
+  /* top: 1rem; */
+  margin-left: 3rem;
+  /* width: fit-content; */
+  background-color: rgb(88, 146, 146);
 }
 
 @keyframes animate {

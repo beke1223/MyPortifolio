@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaDownload } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
-import { Modal } from "react-bootstrap";
+import { Card as Container, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { Image } from "react-bootstrap";
 import cv from "../img/cv.jpg";
@@ -13,7 +13,7 @@ function ViewDownLoad() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="viewDow">
+    <Container className="viewDow">
       <Row className="btnRow">
         <Col md={6}>
           <Button
@@ -28,7 +28,7 @@ function ViewDownLoad() {
         </Col>
         <Col md={6}>
           <Button
-            className="btn my-1"
+            className="btn "
             size="lg"
             style={{ width: "80%", color: "white" }}
             variant="outline-success"
@@ -44,7 +44,8 @@ function ViewDownLoad() {
         onHide={handleClose}
         backdrop={"static"}
         keyboard={true}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "90vm", maxWidth: "90vm", height: "100%" }}
+        className="dialog-modal modal-lg"
       >
         <Modal.Header></Modal.Header>
         <Modal.Body>
@@ -61,7 +62,7 @@ function ViewDownLoad() {
           </Row>
         </Modal.Footer>
       </Modal>
-    </div>
+    </Container>
   );
 }
 export default ViewDownLoad;

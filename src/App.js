@@ -6,39 +6,44 @@ import Skills from "./components/Skills";
 import Certificates from "./components/certificates";
 import Feedback from "./components/feedback";
 import SocialMedia from "./components/Footer";
-import { Card, Row, Col } from "react-bootstrap";
-import AboutMe from "./components/aboutMe";
+
+import { BrowserRouter, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <Me />
-      <ViewDownLoad />
-      <Skills />
+    <BrowserRouter>
+      <div className=" ">
+        {/* <Navigation /> */}
+        <Me />
+        <ViewDownLoad />
+        <div className="skill-feedback-cert">
+          <Skills />
+          {/* <Row>
+          <Col sm={12} md={12} lg={6}>
+            <AboutMe />
+          </Col>
 
-      <Row>
-        <Col sm={12} md={12} lg={6}>
-          <AboutMe />
-        </Col>
-
-        <Col sm={12} md={12} lg={6}>
+          <Col sm={12} md={12} lg={6}> */}
           <Certificates />
-        </Col>
-      </Row>
-
-      <Card style={{ height: "90%" }}>
-        <Row>
-          <Col sm={12} md={6}>
-            <Feedback />
-          </Col>
-
-          <Col sm={12} md={6}>
-            <SocialMedia />
-          </Col>
-        </Row>
-      </Card>
-    </div>
+          {/* </Col> */}
+          {/* </Row> */}
+          <Feedback />
+        </div>
+        <SocialMedia customClass="social-link-main" />
+        <footer className="header text-center">
+          {" "}
+          <Link to={"/"}>
+            <h1>Tinchel</h1>
+          </Link>
+          <div
+            className="text-center"
+            style={{ backgroundColor: "transparent" }}
+          >
+            All Rights reserved
+          </div>
+        </footer>{" "}
+      </div>
+    </BrowserRouter>
   );
 }
 

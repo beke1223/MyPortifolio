@@ -1,3 +1,4 @@
+import { Accordion, Col, ListGroup, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 var Lanskils = [
   {
@@ -6,11 +7,11 @@ var Lanskils = [
   },
   {
     language: "Java",
-    value: 70,
+    value: 80,
   },
   {
     language: "Python",
-    value: 80,
+    value: 75,
   },
   {
     language: "JavaScript",
@@ -30,46 +31,60 @@ var Lanskils = [
   },
   {
     language: "React Js",
-    value: 70,
+    value: 85,
   },
   {
     language: "Flutter",
-    value: "loading ...",
+    value: 60,
   },
 ];
 
 function Skills() {
   return (
-    <Card
-      style={{
-        position: "absolute",
-        backgroundColor: "transparent",
-        height: "30%",
-        width: "70%",
-        left: "20%",
-        border: "none",
-      }}
-    >
-      <div className="skills-Circular">
-        <div className="langs">
-          {Lanskils.map((skill) => {
-            return (
-              <div
-                className="indLang "
-                style={{
-                  clipPath: "circle()",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p>{skill.language}</p>
-                <p>{skill.value}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </Card>
+    <Accordion defaultActiveKey="0" className="mt-5" flush>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Skills</Accordion.Header>
+        <Accordion.Body style={{ backgroundColor: "black" }}>
+          <Card className="skills-Circular " bg="dark">
+            <Card.Body>
+              <Card.Text className="">
+                <ListGroup>
+                  <div className="langs ">
+                    {Lanskils.map((skill) => {
+                      return (
+                        <ListGroup.Item>
+                          {" "}
+                          <div className="indLang text-center">
+                            <Row>
+                              <Col>
+                                {" "}
+                                <p>{skill.language}</p>
+                              </Col>
+                              <Col>
+                                {/* <p>{skill.value}</p> */}
+                                <p>
+                                  {skill.value > 50 && skill.value < 71
+                                    ? "Basic"
+                                    : skill.value < 91 && skill.value > 71
+                                    ? " Medium"
+                                    : skill.value != 0 && skill.value > 91
+                                    ? "High"
+                                    : ""}
+                                </p>
+                              </Col>
+                            </Row>
+                          </div>
+                        </ListGroup.Item>
+                      );
+                    })}
+                  </div>{" "}
+                </ListGroup>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
   );
 }
 export default Skills;

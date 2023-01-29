@@ -47,7 +47,7 @@ function Navigation() {
   ];
 
   return (
-    <Navbar bg="light" expand="lg" className={scrolled ? "scrolled " : ""}>
+    <Navbar bg="light" expand="lg" className={scrolled ? "scrolled  " : ""}>
       <Container className="navBarInner">
         <Navbar.Brand href="#home">
           <img src={tinchel} alt="logo" style={{ height: "4rem" }} />
@@ -56,7 +56,7 @@ function Navigation() {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto nav">
+          <Nav className="me-auto nav ">
             {menuData.map((item) => {
               return (
                 <Nav.Link to={item.path} key={item.name}>

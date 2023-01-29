@@ -14,7 +14,12 @@
     "react-bootstrap-star-rating": "^3.5.5-alpha.0.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-rating": "^2.0.5",
+    "react-router": "^6.8.0",
+    "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
