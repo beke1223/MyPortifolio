@@ -10,49 +10,91 @@
   box-shadow: inset rgb(201, 148, 148);
   font-size: 1.5rem;
 }
-
-.langs {
-  /* align-items: center; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-  /* justify-content: center; */
-  /* width: 100%; */
+.skill-header {
   position: relative;
-  display: flex;
-  /* left: 30%; */
-  /* right: 30%; */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+  -webkit-text-stroke: 0.1rem rgb(206, 203, 40);
+  left: -20%;
 }
-.langs div {
-  /* position: absolute; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-  /* position: absolute; */
-  /* position: relative; */
+.skills-container {
+  position: relative;
+  left: 20%;
 }
 .indLang {
-  /* position: absolute; */
-  /* position: relative; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: 0.1rem solid gold;
+  font-size: 5rem;
 }
 
-.indLang:nth-child(even) {
-  /* position: absolute; */
-  background-color: rgb(38, 167, 38);
-  /* width: fit-content; */
-  /* top: 1rem; */
-  /* left: 14rem; */
-  margin-left: 3rem;
-  /* top: -1rem; */
-  /* top: 0%; */
+.indLang:nth-child(1) {
+  left: 20rem;
 }
-.indLang:nth-child(odd) {
-  /* position: absolute; */
-  /* top: 0%; */
-  /* top: 1rem; */
-  margin-left: 3rem;
-  /* width: fit-content; */
-  background-color: rgb(88, 146, 146);
+.indLang:nth-child(2) {
+}
+.indLang:nth-child(3) {
+  left: 20rem;
+}
+.indLang:nth-child(4) {
+}
+.indLang:nth-child(5) {
+  left: 20rem;
+}
+.indLang:nth-child(6) {
+}
+.indLang:nth-child(7) {
+  left: 20rem;
+}
+.indLang:nth-child(8) {
+}
+.indLang:nth-child(9) {
+  left: 20rem;
+}
+
+.projects {
+  position: relative;
+}
+.projects-individual {
+  border: 0.2rem solid gold;
+}
+.projects-individual:nth-child(1) {
+  height: 10%;
+  width: 30%;
+  margin-left: 10%;
+}
+.projects-individual:nth-child(2) {
+  width: 25%;
+  height: 20%;
+  margin-left: -20%;
+  /* margin-bottom: -10%; */
+  margin-top: 19%;
+}
+.projects-individual:nth-child(3) {
+  width: 30%;
+  height: 10%;
+  margin-right: -15%;
+  margin-top: -3%;
+  margin-left: 2%;
+}
+.projects-individual:nth-child(4) {
+  width: 32%;
+  margin-top: 15%;
+  height: 20%;
+  margin-left: -10%;
+}
+.project-header {
+  margin-bottom: 5%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+  -webkit-text-stroke: 0.1rem rgb(206, 203, 40);
+  box-shadow: 1rem 1rem 1rem 1rem green;
 }
 
 @keyframes animate {

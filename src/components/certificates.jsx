@@ -17,9 +17,9 @@ import { Link } from "react-router-dom";
 
 const cert = [
   {
-    site: "Coursera",
-    language: "JavaScript",
-    url: "https://www.Coursera.com/",
+    site: "FreecodeCamp",
+    language: "Front End Development Libraries",
+    url: "https://freecodecamp.org/certification/fcc22618f34-a061-4408-8bf9-d14ed024db06/front-end-development-libraries",
     img: img1,
   },
   {
@@ -31,43 +31,43 @@ const cert = [
   {
     site: "Hackerrank",
     language: "Java",
-    url: "https://www.Hackerrank.com/",
+    url: "https://www.hackerrank.com/certificates/2643c16565fb",
     img: img3,
   },
   {
     site: "SoloLearn",
     language: "JavaScript",
-    url: "https://www.SoloLearn.com/",
+    url: "https://www.sololearn.com/certificates/CT-9S9KAHBB",
     img: img4,
   },
   {
     site: "SoloLearn",
     language: "Java",
-    url: "https://www.SoloLearn.com/",
+    url: "https://www.sololearn.com/certificates/CT-VVMHS1GI",
     img: img5,
   },
   {
     site: "SoloLearn",
     language: "Html",
-    url: "https://www.SoloLearn.com/",
+    url: "https://www.sololearn.com/certificates/CT-IRL9QIVN",
     img: img6,
   },
   {
     site: "SoloLearn",
     language: "Css",
-    url: "https://www.SoloLearn.com/",
+    url: "https://www.sololearn.com/certificates/CT-V7IRI4YT ",
     img: img7,
   },
   {
     site: "SoloLearn",
     language: "React+Redux",
-    url: "https://www.SoloLearn.com/",
+    url: "https://www.sololearn.com/certificates/CT-PXASEFNG",
     img: img8,
   },
   {
-    site: "Coursera",
-    language: "JavaScript",
-    url: "https://www.Coursera.com/",
+    site: "SoloLearn",
+    language: "PHP",
+    url: "https://www.sololearn.com/certificates/CT-8GIQHZXB",
     img: img9,
   },
 ];

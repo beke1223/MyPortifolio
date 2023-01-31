@@ -7,35 +7,46 @@ import { Card as Container, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { Image } from "react-bootstrap";
 import cv from "../img/cv.jpg";
+import { Link } from "react-router-dom";
 
 function ViewDownLoad() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <Container className="viewDow">
-      <Row className="btnRow">
+    <Container className="viewDow text-center">
+      <p className="cv mb-5">CV</p>
+      <Row className="btnRow mt-5">
         <Col md={6}>
           <Button
             onClick={handleShow}
-            className="btn toggle "
+            className="btn toggle ms-5 viewDownButton"
             size="lg"
-            style={{ width: "80%", marginLeft: "20%", color: "white" }}
             variant="outline-success"
           >
-            View &nbsp; <FaEye />
+            <p className="view-downButton-text">
+              {" "}
+              View &nbsp; <FaEye />
+            </p>
           </Button>
         </Col>
         <Col md={6}>
-          <Button
-            className="btn "
-            size="lg"
-            style={{ width: "80%", color: "white" }}
-            variant="outline-success"
+          <Link
+            to={
+              "https://drive.google.com/uc?export=download&id=1n1DyfEfCZ4EB70p_BiLDmpNJDALPeAQI"
+            }
           >
-            Download&nbsp;
-            <FaDownload />
-          </Button>
+            <Button
+              className="btn viewDownButton"
+              size="lg"
+              variant="outline-success"
+            >
+              <p className="view-downButton-text">
+                Download &nbsp;
+                <FaDownload />
+              </p>
+            </Button>
+          </Link>
         </Col>
       </Row>
 
@@ -54,7 +65,13 @@ function ViewDownLoad() {
         <Modal.Footer>
           <Row>
             <Col md={6} lg={6} sm={12}>
-              <Button>Download</Button>
+              <Link
+                to={
+                  "https://drive.google.com/uc?export=download&id=1n1DyfEfCZ4EB70p_BiLDmpNJDALPeAQI"
+                }
+              >
+                <Button>Download</Button>
+              </Link>
             </Col>
             <Col md={6} lg={6} sm={12}>
               <Button onClick={handleClose}>Close</Button>

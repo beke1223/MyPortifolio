@@ -8,6 +8,7 @@ import Feedback from "./components/feedback";
 import SocialMedia from "./components/Footer";
 
 import { BrowserRouter, Link } from "react-router-dom";
+import Projects from "./components/projects";
 
 function App() {
   return (
@@ -24,24 +25,25 @@ function App() {
           </Col>
 
           <Col sm={12} md={12} lg={6}> */}
-          <Certificates />
+          {/* <Certificates /> */}
+          <Projects />
           {/* </Col> */}
           {/* </Row> */}
           <Feedback />
+          <SocialMedia customClass="social-link-main" />
+          <footer className="header text-center">
+            {" "}
+            <Link to={"/"}>
+              <h1>Tinchel</h1>
+            </Link>
+            <div
+              className="text-center"
+              style={{ backgroundColor: "transparent" }}
+            >
+              All Rights reserved
+            </div>
+          </footer>{" "}
         </div>
-        <SocialMedia customClass="social-link-main" />
-        <footer className="header text-center">
-          {" "}
-          <Link to={"/"}>
-            <h1>Tinchel</h1>
-          </Link>
-          <div
-            className="text-center"
-            style={{ backgroundColor: "transparent" }}
-          >
-            All Rights reserved
-          </div>
-        </footer>{" "}
       </div>
     </BrowserRouter>
   );

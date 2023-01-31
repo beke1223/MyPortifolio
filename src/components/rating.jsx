@@ -6,7 +6,7 @@ function Rating() {
   const rateId = [1, 2, 3, 4, 5];
 
   const setSelectedStar = async (value) => {
-    for (let i = 0; i <= value; i++) {
+    for (let i = value; i >= 0; i--) {
       console.log(i);
       selectedTemp.push(i);
     }

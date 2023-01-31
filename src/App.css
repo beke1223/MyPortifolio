@@ -76,15 +76,32 @@ body {
   background-attachment: fixed;
   height: 22rem !important;
 }
+.cv {
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 5rem;
+  color: rgb(14, 12, 12);
+  -webkit-text-stroke: 0.1rem rgb(206, 203, 40);
+}
+.viewDownButton {
+  height: 7rem;
+  width: 80%;
+  color: white;
+}
 .btnRow {
   position: relative;
-  top: 85%;
+  /* top: 65%; */
   /* margin-left: 30%; */
 }
 /* .LanName {
   font-size: 2rem;
 } */
-
+.view-downButton-text {
+  color: white;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 .skill-feedback-cert {
   background-image: url("./img/bgSkill.jpg");
   background-position: center;
@@ -153,18 +170,17 @@ body {
   width: 10rem;
   height: 2rem;
   background: rgba(217, 217, 217, 0.1);
-  display: block;
+  /* display: block; */
   border-radius: 50%;
   /* margin-right: 1rem; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 .social-icon-img {
   width: 2rem;
-  margin: 0%;
 }
 
 .feedback > .App {
@@ -174,7 +190,7 @@ body {
 .social-link {
   text-decoration: none;
   color: rgb(245, 245, 245);
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 .social-link-main {
   display: flex;
@@ -186,17 +202,13 @@ body {
   display: block;
 }
 .social-link-test {
-  display: inline-flex;
-  justify-content: middle;
-  width: 100%;
-  /* height: 4rem; */
-  background-image: url("./img/contact-me.jpg");
-  background-position: center;
+  display: flex;
 
-  background-size: cover;
-  background-attachment: scroll;
-  /* background-color: white !important; */
-  /* box-shadow: 5px 5px 30px rgba(250, 250, 250, 0.5); */
+  /* height: 4rem; */
+  margin: 3rem;
+  background-color: white !important;
+  box-shadow: 5px 5px 30px rgba(250, 250, 250, 0.5);
+  opacity: 0.4;
   /* border: 0.2rem solid white; */
 }
 
@@ -209,15 +221,41 @@ body {
 .social-icon-text-visible {
   /* color: transparent; */
   position: relative;
-  animation: transfrom-link 2s 300ms linear forwards;
+  /* animation: transfrom-link 2s 300ms linear forwards; */
 }
 
 .social-icon-img:hover {
   transform: rotate(360deg);
   transition-delay: 300ms;
   transition-duration: 2s;
-  margin-right: 1%;
 }
+.container-social-link-about-me {
+  height: 20%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gold;
+  background-color: gold;
+  opacity: 0.5;
+}
+.container-social-link-about-me img {
+  width: 3rem;
+}
+.container-social-link-about-me a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+.container-social-link-about-me span {
+  position: relative;
+  margin-left: 0.5rem;
+  top: 0.8rem;
+}
+.container-social-link-about-me img:hover {
+  background-color: #c5c211;
+}
+
 .star {
   cursor: pointer;
   height: 2rem;
@@ -264,10 +302,10 @@ body {
 
 @keyframes transfrom-link {
   from {
-    left: -100%;
+    left: -1000%;
   }
   to {
-    left: 0%;
+    left: 100%;
   }
 }
 

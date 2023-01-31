@@ -4,11 +4,13 @@ import linkedIn from "../img/linkedIn.svg";
 import discord from "../img/discord.svg";
 import twitter from "../img/twitter.svg";
 import github from "../img/square-github.svg";
-import Card from "react-bootstrap/Card";
+
 import { Link } from "react-router-dom";
-import { Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import { useState } from "react";
-const socialMedia = [
+import { createContext } from "react";
+
+const socialMediaList = [
   {
     urls: "mailto:asebekalu@gmail.com",
     img: gmail,
@@ -21,12 +23,7 @@ const socialMedia = [
     alt: "social-media-icon-github",
     name: "Github",
   },
-  {
-    urls: "#facebook",
-    img: fb,
-    alt: "social-media-icon-facebook",
-    name: "FaceBook",
-  },
+
   {
     urls: "https://www.linkedin.com/in/bekalu-atto-821393226/",
     img: linkedIn,
@@ -59,15 +56,30 @@ function SocialMedia(props) {
   console.log(Customclasses);
 
   return (
-    <div className={"social-link-test"}>
+    <Container className={"social-link-test"}>
       {/* <ListGroup> */}
-      {socialMedia.map((media) => (
+      <h2
+        style={{
+          color: "black",
+          position: "relative",
+          left: "10rem",
+          margin: "1rem 0 3rem 0",
+        }}
+      >
+        Contact-me
+      </h2>
+      {socialMediaList.map((media) => (
         <div key={media.alt} variant="flush" className={Customclasses1}>
-          <Link to={`${media.urls}`} target="_blank" className="social-link">
+          <Link
+            to={`${media.urls}`}
+            target="_blank"
+            className="social-link"
+            style={{ position: "relative", top: "1rem" }}
+          >
             <Image
               src={media.img}
               width="30rem"
-              className="social-icon-img"
+              className="social-icon-img me-3"
               onMouseEnter={() => footerSetVisible(media.name)}
               onMouseLeave={() => footerSetVisible("")}
             />
@@ -84,7 +96,7 @@ function SocialMedia(props) {
         </div>
       ))}
       {/* </ListGroup> */}
-    </div>
+    </Container>
   );
 }
 export default SocialMedia;
