@@ -21,7 +21,7 @@
 }
 .skills-container {
   position: relative;
-  left: 20%;
+  left: 15%;
 }
 .indLang {
   position: relative;
@@ -33,27 +33,27 @@
 }
 
 .indLang:nth-child(1) {
-  left: 20rem;
+  left: 20%;
 }
 .indLang:nth-child(2) {
 }
 .indLang:nth-child(3) {
-  left: 20rem;
+  left: 20%;
 }
 .indLang:nth-child(4) {
 }
 .indLang:nth-child(5) {
-  left: 20rem;
+  left: 20%;
 }
 .indLang:nth-child(6) {
 }
 .indLang:nth-child(7) {
-  left: 20rem;
+  left: 20%;
 }
 .indLang:nth-child(8) {
 }
 .indLang:nth-child(9) {
-  left: 20rem;
+  left: 20%;
 }
 
 .projects {
@@ -88,7 +88,8 @@
   margin-left: -10%;
 }
 .project-header {
-  margin-bottom: 5%;
+  margin: 5% 5% 10% 5%;
+  /* margin-bottom: 5%; */
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: 4rem;

@@ -56,17 +56,21 @@ function AboutMe() {
       }}
     >
       <h2>Hello I am Tinchel</h2>
-      <h3>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum iure
-        quaerat dolores a sint fugiat qui error vel.
-      </h3>
+      <h3>Front-End Web and Mobile-App Developer</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-        laborum ullam suscipit optio atque nulla, dolores id eaque quia, impedit
-        voluptate numquam pariatur nihil ipsam temporibus reiciendis hic,
-        laudantium fugit. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit.
+        I am Front-End web-Developer and Mobile App Developer in Java and
+        Flutter located in Ethiopia. well organised person , love problem
+        solving and exploring new things , always open to learn new things and
+        Delivering highly executed front-end user experiences by paying close
+        attention to the nuances of design, optimization, and performance.
+        <br />
+        <strong>
+          I'm open to Job opportunities where I can contribute, learn and grow.
+          If you have a good opportunity that matches my skills and experience
+          then don't hesitate to contact me.
+        </strong>
       </p>
+
       <div className=" container-social-link-about-me">
         {socialMediaList.map((links) => {
           return (

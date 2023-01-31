@@ -1,43 +1,31 @@
 import { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import ReactStars from "react-rating-stars-component";
 
 function Rating() {
-  const [selected, setSelected] = useState([]);
-  const [selectedTemp, setSelectedTemp] = useState([]);
-  const rateId = [1, 2, 3, 4, 5];
+  const [rate, setRate] = useState();
 
-  const setSelectedStar = async (value) => {
-    for (let i = value; i >= 0; i--) {
-      console.log(i);
-      selectedTemp.push(i);
-    }
-    setSelected([...selectedTemp]);
-  };
-
-  const remSelectedStar = (value) => {
-    for (let i = 0; i <= value; i++) {
-      selectedTemp.pop(i);
-    }
-    selectedTemp.pop(0);
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+    setRate(newRating);
   };
 
   return (
-    <div className="  mt-5">
-      {rateId.map((rateid, index) => {
-        return (
-          <div
-            className={selected.includes(index) ? "star selected" : "star"}
-            onMouseEnter={() => setSelectedStar(index)}
-            onMouseLeave={() => {
-              remSelectedStar(index);
-            }}
-            onMouseOut={() => {
-              remSelectedStar(5);
-            }}
-            onClick={() => setSelectedStar(index)}
-          ></div>
-        );
-      })}
-    </div>
+    <Container className="m-5 d-flex">
+      <h5 className="mt-4 me-4">Rate My Pf</h5>
+
+      <ReactStars
+        count={5}
+        size={50}
+        activeColor="#ffd700"
+        isHalf={true}
+        emptyIcon={<i className="far fa-star"></i>}
+        halfIcon={<i className="fa fa-star-half-alt"></i>}
+        fullIcon={<i className="fa fa-star"></i>}
+        onChange={ratingChanged}
+      />
+      {rate}
+    </Container>
   );
 }
 

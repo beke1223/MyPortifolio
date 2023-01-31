@@ -1,18 +1,20 @@
 import "./App.css";
-import Navigation from "./components/navigationBar";
 import Me from "./components/me";
 import ViewDownLoad from "./components/ViewDownload";
 import Skills from "./components/Skills";
-import Certificates from "./components/certificates";
 import Feedback from "./components/feedback";
 import SocialMedia from "./components/Footer";
 
 import { BrowserRouter, Link } from "react-router-dom";
 import Projects from "./components/projects";
+import "firebase/firestore";
+import { Col, Row } from "react-bootstrap";
 
 function App() {
   return (
     <BrowserRouter>
+      <SocialMedia customClass="social-link-main" />
+
       <div className=" ">
         {/* <Navigation /> */}
         <Me />
@@ -30,7 +32,6 @@ function App() {
           {/* </Col> */}
           {/* </Row> */}
           <Feedback />
-          <SocialMedia customClass="social-link-main" />
           <footer className="header text-center">
             {" "}
             <Link to={"/"}>

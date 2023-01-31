@@ -8,7 +8,6 @@ import github from "../img/square-github.svg";
 import { Link } from "react-router-dom";
 import { Container, Image } from "react-bootstrap";
 import { useState } from "react";
-import { createContext } from "react";
 
 const socialMediaList = [
   {
@@ -56,30 +55,31 @@ function SocialMedia(props) {
   console.log(Customclasses);
 
   return (
-    <Container className={"social-link-test"}>
+    <Container
+      className={"social-link-test text-center"}
+      style={{ position: "fixed", zIndex: "1", top: "64%" }}
+    >
       {/* <ListGroup> */}
-      <h2
+      <p
         style={{
           color: "black",
           position: "relative",
-          left: "10rem",
-          margin: "1rem 0 3rem 0",
         }}
       >
         Contact-me
-      </h2>
+      </p>
       {socialMediaList.map((media) => (
-        <div key={media.alt} variant="flush" className={Customclasses1}>
+        <div key={media.alt} variant="flush">
           <Link
             to={`${media.urls}`}
             target="_blank"
             className="social-link"
-            style={{ position: "relative", top: "1rem" }}
+            style={{ position: "relative" }}
           >
             <Image
               src={media.img}
-              width="30rem"
-              className="social-icon-img me-3"
+              width="8px"
+              className="social-icon-img"
               onMouseEnter={() => footerSetVisible(media.name)}
               onMouseLeave={() => footerSetVisible("")}
             />
