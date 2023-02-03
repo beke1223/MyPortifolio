@@ -18,6 +18,7 @@
   color: white;
   -webkit-text-stroke: 0.1rem rgb(206, 203, 40);
   left: -20%;
+  margin-top: 3%;
 }
 .skills-container {
   position: relative;
@@ -25,34 +26,13 @@
 }
 .indLang {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  /* height: 100%; */
   color: white;
   border: 0.1rem solid gold;
   font-size: 5rem;
 }
-
-.indLang:nth-child(1) {
-  left: 20%;
-}
-.indLang:nth-child(2) {
-}
-.indLang:nth-child(3) {
-  left: 20%;
-}
-.indLang:nth-child(4) {
-}
-.indLang:nth-child(5) {
-  left: 20%;
-}
-.indLang:nth-child(6) {
-}
-.indLang:nth-child(7) {
-  left: 20%;
-}
-.indLang:nth-child(8) {
-}
-.indLang:nth-child(9) {
+.indLang:nth-child(odd) {
   left: 20%;
 }
 
@@ -62,30 +42,31 @@
 .projects-individual {
   border: 0.2rem solid gold;
 }
+
 .projects-individual:nth-child(1) {
   height: 10%;
   width: 30%;
   margin-left: 10%;
 }
 .projects-individual:nth-child(2) {
-  width: 25%;
+  width: 40%;
   height: 20%;
   margin-left: -20%;
   /* margin-bottom: -10%; */
-  margin-top: 19%;
+  margin-top: 21%;
 }
 .projects-individual:nth-child(3) {
-  width: 30%;
-  height: 10%;
+  width: 20%;
+  height: 27%;
   margin-right: -15%;
-  margin-top: -3%;
-  margin-left: 2%;
+  margin-top: -8%;
+  margin-left: -19%;
 }
 .projects-individual:nth-child(4) {
-  width: 32%;
+  width: 20%;
   margin-top: 15%;
   height: 20%;
-  margin-left: -10%;
+  margin-left: 15%;
 }
 .project-header {
   margin: 5% 5% 10% 5%;
@@ -134,5 +115,10 @@
   100% {
     transform: rotate(0deg);
     transform-origin: 10%;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-color: green;
   }
 }

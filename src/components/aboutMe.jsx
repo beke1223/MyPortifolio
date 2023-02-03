@@ -45,16 +45,7 @@ function AboutMe() {
     },
   ];
   return (
-    <div
-      style={{
-        position: "relative",
-        top: "-23rem",
-        left: "40%",
-        width: "40%",
-        boxShadow: "5px 5px 30px rgba(143, 136, 136, 0.5)",
-        textAlign: "start",
-      }}
-    >
+    <div className="about-me">
       <h2>Hello I am Tinchel</h2>
       <h3>Front-End Web and Mobile-App Developer</h3>
       <p>
@@ -71,23 +62,11 @@ function AboutMe() {
         </strong>
       </p>
 
-      <div className=" container-social-link-about-me">
-        {socialMediaList.map((links) => {
-          return (
-            <div>
-              <Link to={links.urls}>
-                <Image src={links.img} alt={links.name} className="w-25" />
-                <span> {links.name}</span>
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-      <Link to="mailto:asebekalu@gmail.com">
+      <a href="mailto:asebekalu@gmail.com">
         <Button className="outline-info w-75 mt-3 " variant="outline-info">
           <h1>Contact</h1>
         </Button>
-      </Link>
+      </a>
     </div>
   );
 }

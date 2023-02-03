@@ -15,7 +15,7 @@ function Me() {
   return (
     <div className="me">
       <hr className="horLine" />
-      <div className="d-grid text-center">
+      <div className="d-flex text-center">
         <Image src={tinchel} alt="aa" className="round-circle pImage w-25 " />
         <AboutMe />
       </div>

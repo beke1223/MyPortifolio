@@ -4,6 +4,7 @@ var Lanskils = [
   {
     language: "C++",
     value: 60,
+    icon: "fa fa-C++",
   },
   {
     language: "Java",
@@ -41,14 +42,15 @@ var Lanskils = [
 
 function Skills() {
   return (
-    <Container fluid className="mt-3 text-center skills-container">
-      <p className="skill-header">Qualification</p>
+    <Container fluid className="mt-5 text-center skills-container">
+      <p className="skill-header mt-3">Qualification</p>
 
       <Row>
         {Lanskils.map((skill) => {
           return (
             <Col md={6} lg={6} sm={12} xl={6} className="m-3 indLang">
               <p>{skill.language}</p>
+              <i className={skill.icon}></i>
             </Col>
           );
         })}

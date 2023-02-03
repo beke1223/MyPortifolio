@@ -34,14 +34,12 @@ function App() {
           <Feedback />
           <footer className="header text-center">
             {" "}
-            <Link to={"/"}>
-              <h1>Tinchel</h1>
-            </Link>
+            <h1>Tinchel</h1>
             <div
               className="text-center"
               style={{ backgroundColor: "transparent" }}
             >
-              All Rights reserved
+              All Rights Reserved ! &nbsp;&nbsp;&copy; 2022
             </div>
           </footer>{" "}
         </div>

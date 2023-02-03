@@ -71,7 +71,7 @@ function SocialMedia(props) {
       {socialMediaList.map((media) => (
         <div key={media.alt} variant="flush">
           <Link
-            to={`${media.urls}`}
+            to={media.urls}
             target="_blank"
             className="social-link"
             style={{ position: "relative" }}
