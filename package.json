@@ -1,4 +1,5 @@
 {
+  "homepage": "https://beke1223.github.io/MyPortifolio",
   "name": "mypf",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "bootstrap": "^5.2.3",
     "emailjs": "^4.0.1",
     "firebase": "^9.16.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-star-rating": "^3.5.5-alpha.0.3",
@@ -34,7 +36,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
