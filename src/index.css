@@ -27,7 +27,6 @@
 .indLang {
   position: relative;
   width: 80%;
-  /* height: 100%; */
   color: white;
   border: 0.1rem solid gold;
   font-size: 5rem;
@@ -52,7 +51,6 @@
   width: 40%;
   height: 20%;
   margin-left: -20%;
-  /* margin-bottom: -10%; */
   margin-top: 21%;
 }
 .projects-individual:nth-child(3) {
@@ -70,7 +68,6 @@
 }
 .project-header {
   margin: 5% 5% 10% 5%;
-  /* margin-bottom: 5%; */
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: 4rem;

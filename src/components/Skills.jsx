@@ -1,5 +1,4 @@
-import { Accordion, Col, Container, ListGroup, Row } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
+import { Col, Container, Row } from "react-bootstrap";
 var Lanskils = [
   {
     language: "C++",

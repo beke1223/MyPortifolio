@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import { Badge, Col, Container, Form, Modal, Row } from "react-bootstrap";
+import { Badge, Container, Form, Modal } from "react-bootstrap";
 
 import { useState } from "react";
 import { useEffect } from "react";
@@ -56,7 +56,7 @@ function Feedback() {
   return (
     <Container>
       <Container className="mb-3 mt-3 d-flex">
-        <h5 className="mt-4 me-4">Rate My Pf</h5>
+        <h5 className="mt-4 me-4">Rate My Portfolio Website</h5>
 
         <ReactStars
           count={5}
