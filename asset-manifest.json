@@ -1,21 +1,35 @@
 {
   "files": {
-    "main.css": "/MyPortifolio/static/css/main.f0e2a264.css",
-    "main.js": "/MyPortifolio/static/js/main.4a782cf0.js",
-    "static/media/pcBg.jpg": "/MyPortifolio/static/media/pcBg.ee14a4771b9aeb776e6c.jpg",
-    "static/media/bgSkill.jpg": "/MyPortifolio/static/media/bgSkill.a68792bc9152345cdb48.jpg",
-    "static/media/amazone (2).png": "/MyPortifolio/static/media/amazone (2).13aa6738ed366d4a1fb5.png",
-    "static/media/amazone (3).png": "/MyPortifolio/static/media/amazone (3).0cbc50b17dbc209bd523.png",
-    "static/media/cv.jpg": "/MyPortifolio/static/media/cv.8429e7ea060398d0e315.jpg",
-    "static/media/expenseTracker (1).png": "/MyPortifolio/static/media/expenseTracker (1).162ee81e45b2048469e3.png",
-    "static/media/photo@me.jpg": "/MyPortifolio/static/media/photo@me.0bf3859f40a39a70ba76.jpg",
-    "static/media/expenseTracker (2).png": "/MyPortifolio/static/media/expenseTracker (2).1dc66755c88d6a15bdf7.png",
-    "index.html": "/MyPortifolio/index.html",
-    "main.f0e2a264.css.map": "/MyPortifolio/static/css/main.f0e2a264.css.map",
-    "main.4a782cf0.js.map": "/MyPortifolio/static/js/main.4a782cf0.js.map"
+    "main.css": "/beke1223/MyPortifolio/static/css/main.72cc6885.css",
+    "main.js": "/beke1223/MyPortifolio/static/js/main.2bbfc2d3.js",
+    "static/media/pcBg.jpg": "/beke1223/MyPortifolio/static/media/pcBg.ee14a4771b9aeb776e6c.jpg",
+    "static/media/bgSkill.jpg": "/beke1223/MyPortifolio/static/media/bgSkill.a68792bc9152345cdb48.jpg",
+    "static/media/amazone (2).png": "/beke1223/MyPortifolio/static/media/amazone (2).13aa6738ed366d4a1fb5.png",
+    "static/media/cv.png": "/beke1223/MyPortifolio/static/media/cv.ca649aabbb589ed3b786.png",
+    "static/media/amazone (3).png": "/beke1223/MyPortifolio/static/media/amazone (3).0cbc50b17dbc209bd523.png",
+    "static/media/expenseTracker (1).png": "/beke1223/MyPortifolio/static/media/expenseTracker (1).162ee81e45b2048469e3.png",
+    "static/media/photo@me.jpg": "/beke1223/MyPortifolio/static/media/photo@me.0bf3859f40a39a70ba76.jpg",
+    "static/media/expenseTracker (2).png": "/beke1223/MyPortifolio/static/media/expenseTracker (2).1dc66755c88d6a15bdf7.png",
+    "static/media/java.svg": "/beke1223/MyPortifolio/static/media/java.3dec1fe704244f3cf61d9c1aa9e5707c.svg",
+    "static/media/discord.svg": "/beke1223/MyPortifolio/static/media/discord.f275084a844fcf02be2c9c0eb4e062a3.svg",
+    "static/media/square-github.svg": "/beke1223/MyPortifolio/static/media/square-github.b9319f359142dabf795d5833382c2c9e.svg",
+    "static/media/python.svg": "/beke1223/MyPortifolio/static/media/python.d32e17a67e47af5af825d688825deb85.svg",
+    "static/media/c++.svg": "/beke1223/MyPortifolio/static/media/c++.5eb1abc418ed3dd0e1d217f2e5fb2d1e.svg",
+    "static/media/react.svg": "/beke1223/MyPortifolio/static/media/react.0e6e2764845d97299412fbe87aa9f22d.svg",
+    "static/media/linkedIn.svg": "/beke1223/MyPortifolio/static/media/linkedIn.91b02dc1d658b666c67fd4fb17274f35.svg",
+    "static/media/twitter.svg": "/beke1223/MyPortifolio/static/media/twitter.dd4a2495be2c2f763caf188a02828c6a.svg",
+    "index.html": "/beke1223/MyPortifolio/index.html",
+    "static/media/html.svg": "/beke1223/MyPortifolio/static/media/html.dfc7e9f53295d30ad7e70e6a0f2ef3f5.svg",
+    "static/media/bootstrap.svg": "/beke1223/MyPortifolio/static/media/bootstrap.79cece84e9f0b3b66f7e573660812684.svg",
+    "static/media/javascript.svg": "/beke1223/MyPortifolio/static/media/javascript.39b3b23e32a0d35c7b37624685b68a68.svg",
+    "static/media/envelope-regular.svg": "/beke1223/MyPortifolio/static/media/envelope-regular.93e70155ef4a52027277ea9ca2458ffe.svg",
+    "static/media/css2.svg": "/beke1223/MyPortifolio/static/media/css2.68fdf451aa340db1b8fdc1764ed6d1a4.svg",
+    "static/media/flutter.svg": "/beke1223/MyPortifolio/static/media/flutter.dc50fbb9c85fc66aa6182aa965eb8e49.svg",
+    "main.72cc6885.css.map": "/beke1223/MyPortifolio/static/css/main.72cc6885.css.map",
+    "main.2bbfc2d3.js.map": "/beke1223/MyPortifolio/static/js/main.2bbfc2d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0e2a264.css",
-    "static/js/main.4a782cf0.js"
+    "static/css/main.72cc6885.css",
+    "static/js/main.2bbfc2d3.js"
   ]
 }
