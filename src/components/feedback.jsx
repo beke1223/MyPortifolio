@@ -73,9 +73,23 @@ function Feedback() {
           <Badge
             bg="success"
             className="ms-3 text-center  "
-            style={{ borderRadius: "50%" }}
+            style={{
+              height: "2rem",
+              marginTop: "1.8rem",
+              width: "2rem",
+              fontFamily: "Times New Roman",
+              fontSize: "1rem",
+            }}
           >
-            <span style={{ position: "relative", top: "40%" }}>{rate}</span>
+            <span
+              style={{
+                position: "relative",
+                textAlign: "center",
+                verticalAlign: "middle",
+              }}
+            >
+              {rate}
+            </span>
           </Badge>
         ) : null}
       </Container>

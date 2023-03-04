@@ -3,6 +3,7 @@ import Me from "./components/me";
 import ViewDownLoad from "./components/ViewDownload";
 import Skills from "./components/Skills";
 import Feedback from "./components/feedback";
+import SocialMedia from "./components/Footer";
 
 import { BrowserRouter } from "react-router-dom";
 import Projects from "./components/projects";
@@ -11,6 +12,7 @@ import "firebase/firestore";
 function App() {
   return (
     <BrowserRouter>
+      <SocialMedia customClass="social-link-main" />
       <div className=" ">
         <Me />
         <ViewDownLoad />
@@ -19,7 +21,6 @@ function App() {
           <Projects />
           <Feedback />
           <footer className="header text-center">
-            {" "}
             <h1>Bekalu</h1>
             <div
               className="text-center"
@@ -27,7 +28,7 @@ function App() {
             >
               All Rights Reserved ! &nbsp;&nbsp;&copy; 2022
             </div>
-          </footer>{" "}
+          </footer>
         </div>
       </div>
     </BrowserRouter>

@@ -6,7 +6,7 @@ import { FaEye } from "react-icons/fa";
 import { Card as Container, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { Image } from "react-bootstrap";
-import cv from "../img/cv.jpg";
+import cv from "../img/cv.png";
 import { Link } from "react-router-dom";
 
 function ViewDownLoad() {

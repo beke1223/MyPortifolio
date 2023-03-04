@@ -19,7 +19,7 @@ function AboutMe() {
           then don't hesitate to contact me.
         </strong>
       </p>
-      <a href="mailto:asebekalu@gmail.com">
+      <a href="https://mailto:asebekalu@gmail.com">
         <Button className="outline-info w-75 mt-3 " variant="outline-info">
           <h1>Contact</h1>
         </Button>
