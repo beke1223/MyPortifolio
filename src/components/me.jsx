@@ -6,8 +6,8 @@ function Me() {
   return (
     <div className="me">
       <hr className="horLine" />
-      <div className="d-flex text-center">
-        <Image src={image} alt="aa" className="round-circle pImage w-25 " />
+      <div className=" text-center">
+        <Image src={image} alt="aa" className="round-circle pImage w-50" />
         <AboutMe />
       </div>
     </div>

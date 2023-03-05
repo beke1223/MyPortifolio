@@ -5,8 +5,8 @@ function AboutMe() {
     <div className="about-me">
       <h2>Hello I am Bekalu Atto</h2>
       <h3>Front-End Web and Mobile-App Developer</h3>
-      <p>
-        I am <strong>Front-End web</strong> and{" "}
+      <p className="me-desc">
+        I am <strong>Front-End web</strong> and
         <strong>Mobile App Developer</strong> in Java and Flutter From Ethiopia.
         well organised person , love problem solving and exploring new things ,
         always open to learn new things and Delivering highly executed front-end

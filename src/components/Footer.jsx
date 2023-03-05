@@ -59,12 +59,11 @@ function SocialMedia(props) {
       style={{
         position: "fixed",
         zIndex: "1",
-        top: "33%",
+        top: "43.3%",
         fontFamily: "Times New Roman",
         fontSize: "2rem",
       }}
     >
-      {/* <ListGroup> */}
       <p
         style={{
           color: "black",
@@ -101,7 +100,6 @@ function SocialMedia(props) {
           </Link>
         </div>
       ))}
-      {/* </ListGroup> */}
     </Container>
   );
 }
