@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beke1223/MyPortifolio/static/css/main.72cc6885.css",
-    "main.js": "/beke1223/MyPortifolio/static/js/main.2bbfc2d3.js",
+    "main.css": "/beke1223/MyPortifolio/static/css/main.f418c23e.css",
+    "main.js": "/beke1223/MyPortifolio/static/js/main.43d4036a.js",
     "static/media/pcBg.jpg": "/beke1223/MyPortifolio/static/media/pcBg.ee14a4771b9aeb776e6c.jpg",
     "static/media/bgSkill.jpg": "/beke1223/MyPortifolio/static/media/bgSkill.a68792bc9152345cdb48.jpg",
     "static/media/amazone (2).png": "/beke1223/MyPortifolio/static/media/amazone (2).13aa6738ed366d4a1fb5.png",
@@ -25,11 +25,11 @@
     "static/media/envelope-regular.svg": "/beke1223/MyPortifolio/static/media/envelope-regular.93e70155ef4a52027277ea9ca2458ffe.svg",
     "static/media/css2.svg": "/beke1223/MyPortifolio/static/media/css2.68fdf451aa340db1b8fdc1764ed6d1a4.svg",
     "static/media/flutter.svg": "/beke1223/MyPortifolio/static/media/flutter.dc50fbb9c85fc66aa6182aa965eb8e49.svg",
-    "main.72cc6885.css.map": "/beke1223/MyPortifolio/static/css/main.72cc6885.css.map",
-    "main.2bbfc2d3.js.map": "/beke1223/MyPortifolio/static/js/main.2bbfc2d3.js.map"
+    "main.f418c23e.css.map": "/beke1223/MyPortifolio/static/css/main.f418c23e.css.map",
+    "main.43d4036a.js.map": "/beke1223/MyPortifolio/static/js/main.43d4036a.js.map"
   },
   "entrypoints": [
-    "static/css/main.72cc6885.css",
-    "static/js/main.2bbfc2d3.js"
+    "static/css/main.f418c23e.css",
+    "static/js/main.43d4036a.js"
   ]
 }
